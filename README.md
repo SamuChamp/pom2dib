@@ -17,4 +17,8 @@ NPEET from
     
     https://github.com/gregversteeg/NPEET
 
-run "python main.py" to execute pom2dib training algorithm
+run 
+
+    python main.py 
+
+to execute pom2dib training algorithm
