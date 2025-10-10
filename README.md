@@ -5,15 +5,15 @@ the code implementation of multi-modal multi-task semantic communication: a dist
 
 requirements:
 
-FSDD from 
+FSDD dataset 
     
     https://github.com/Jakobovski/free-spoken-digit-dataset
 
-MMFi from 
+MMFi dataset 
 
     https://github.com/ybhbingo/MMFi_dataset
 
-NPEET from 
+NPEET mutual information estimator 
     
     https://github.com/gregversteeg/NPEET
 
