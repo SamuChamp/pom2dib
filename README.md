@@ -178,28 +178,6 @@ pom2dib/
 |- README.md
 ```
 
-## Results
-
-### Performance Comparison on HandWritten Dataset
-
-| Method | Sum-Rate (nat) | N-CE (nat) | Top-1 Acc (%) |
-|--------|----------------|------------|---------------|
-| **PoM2-DIB** | **166.78** | **-0.39** | **98.16** |
-| RS-DIB | 141.76 | -0.70 | 88.67 |
-| TADIB | 190.11 | -0.30 | 98.43 |
-| DLSC | 788.43 | -0.10 | 98.59 |
-
-### Performance Comparison on MM-Fi Dataset
-
-| Method | Sum-Rate (nat) | N-CE (nat) | Action Acc (%) | MPJPE (mm) |
-|--------|----------------|------------|----------------|------------|
-| **PoM2-DIB** | **311.43** | **-0.17** | **100.00** | **107.53** |
-| RS-DIB | 67.78 | -2.58 | 16.01 | 137.72 |
-| TADIB | 447.32 | -0.19 | 100.00 | 120.66 |
-| DLSC | 1479.38 | -0.13 | 100.00 | 99.21 |
-
-PoM2-DIB achieves comparable or better performance than full-participation baselines *while satisfying hard resource constraints*.
-
 ## Logs and Outputs
 
 Training logs are saved in `logs/` with the following naming convention:
