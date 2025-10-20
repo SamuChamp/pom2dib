@@ -5,21 +5,12 @@ PyTorch implementation of **"Multi-Modal Multi-Task Semantic Communication: A Di
 *Paper:* [arXiv:2510.04000](https://arxiv.org/abs/2510.04000)  
 *Venue:* Under review at IEEE Transactions on Communications (preliminary version presented at IEEE ICC 2025)
 
-<<<<<<< HEAD
 ## Overview
 
 This repository contains the code implementation for PoM2-DIB, a novel framework that extends distributed information bottleneck (DIB) theory to multi-modal multi-task semantic communication systems. Our approach addresses the challenge of efficient communication across distributed multi-modal sources under physical resource constraints manifested as the limited number of communication links.
-=======
-FSDD dataset 
-    
-    https://github.com/Jakobovski/free-spoken-digit-dataset
-
-MMFi dataset 
->>>>>>> edb5bc302eb55769e46b94b4d3e84dbbb66eec9f
 
 ### Key Features
 
-<<<<<<< HEAD
 - *Probabilistic Modality Selection*: Introduces modality selection as a new degree of freedom in the rate-relevance tradeoff
 - *Distributed Coordination*: Leverages common randomness for coordinated yet decentralized decision-making
 - *Resource-Aware*: Operates under hard constraints on channel capacity and computational capability
@@ -251,14 +242,3 @@ Preliminary version:
 ## Acknowledgements
 
 We thank the authors of [FSDD](https://github.com/Jakobovski/free-spoken-digit-dataset), [MM-Fi](https://github.com/ybhbingo/MMFi_dataset), and [NPEET](https://github.com/gregversteeg/NPEET) for making their datasets and tools publicly available.
-=======
-NPEET mutual information estimator 
-    
-    https://github.com/gregversteeg/NPEET
-
-run 
-
-    python main.py 
-
-to execute pom2dib training algorithm
->>>>>>> edb5bc302eb55769e46b94b4d3e84dbbb66eec9f
