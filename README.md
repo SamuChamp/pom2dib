@@ -196,11 +196,11 @@ Each log contains:
 If you find this work useful for your research, please cite:
 
 ```bibtex
-@article{zhou2024multimodal,
+@article{zhou2025multimodal,
   title={Multi-Modal Multi-Task Semantic Communication: A Distributed Information Bottleneck Perspective},
   author={Zhou, Yujie and Liao, Yiwei and Peng, Cheng and Wang, Rulong and Xiao, Yong and Li, Yingyu and Shi, Guangming},
   journal={arXiv preprint arXiv:2510.04000},
-  year={2024}
+  year={2025}
 }
 ```
 
