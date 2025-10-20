@@ -7,15 +7,13 @@ PyTorch implementation of **"Multi-Modal Multi-Task Semantic Communication: A Di
 
 ## Overview
 
-This repository contains the code implementation for PoM2-DIB, a novel framework that extends distributed information bottleneck (DIB) theory to multi-modal multi-task semantic communication systems. Our approach addresses the challenge of efficient communication across distributed multi-modal sources under physical resource constraints manifested as the limited number of communication links.
+This repository contains the code implementation for PoM2-DIB, a framework that extends distributed information bottleneck (DIB) theory to multi-modal multi-task semantic communication systems. Our approach addresses the challenge of efficient communication across distributed multi-modal sources under physical resource constraints manifested as the limited number of communication links.
 
 ### Key Features
 
 - *Probabilistic Modality Selection*: Introduces modality selection as a new degree of freedom in the rate-relevance tradeoff
 - *Distributed Coordination*: Leverages common randomness for coordinated yet decentralized decision-making
-- *Resource-Aware*: Operates under hard constraints on channel capacity and computational capability
 - *End-to-End Optimization*: Jointly optimizes semantic codecs and selection policies
-- *Multiple Baselines*: Includes implementations of RS-DIB, TADIB, and DLSC for comparison
 
 ## Installation
 
@@ -24,7 +22,6 @@ This repository contains the code implementation for PoM2-DIB, a novel framework
 - Python 3.9+
 - PyTorch 2.2.2+
 - CUDA 13.0+ (for GPU support)
-- Additional dependencies will be installed via requirements.txt
 
 ### Setup
 
@@ -44,9 +41,9 @@ pip install -e .
 cd ..
 ```
 
-## Dataset Preparation
+## Dataset
 
-### HandWritten Dataset (AV-MNIST)
+### HandWritten (AV-MNIST)
 
 This dataset combines MNIST handwritten digits with FSDD spoken digits.
 
@@ -59,7 +56,7 @@ git clone https://github.com/Jakobovski/free-spoken-digit-dataset.git
 
 The code will automatically align MNIST images with FSDD audio samples and apply augmentation.
 
-### MM-Fi Dataset
+### MM-Fi
 
 Multi-modal human activity dataset with RGB-D, LiDAR, mmWave, and WiFi-CSI modalities.
 
@@ -226,16 +223,6 @@ If you find this work useful for your research, please cite:
   author={Zhou, Yujie and Liao, Yiwei and Peng, Cheng and Wang, Rulong and Xiao, Yong and Li, Yingyu and Shi, Guangming},
   journal={arXiv preprint arXiv:2510.04000},
   year={2024}
-}
-```
-
-Preliminary version:
-```bibtex
-@inproceedings{peng2025pom2dib,
-  title={PoM2-DIB: Probabilistic Multi-Modal Multi-Task Distributed Information Bottleneck for Semantic Communication},
-  author={Peng, Cheng and Zhou, Yujie and Xiao, Yong and Li, Yingyu},
-  booktitle={IEEE International Conference on Communications (ICC)},
-  year={2025}
 }
 ```
 
