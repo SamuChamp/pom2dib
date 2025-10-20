@@ -2,7 +2,7 @@
 
 PyTorch implementation of **"Multi-Modal Multi-Task Semantic Communication: A Distributed Information Bottleneck Perspective"**.
 
-*Paper:* [arXiv:2510.04000](https://arxiv.org/abs/2510.04000)  
+*Preprint:* [arXiv:2510.04000](https://arxiv.org/abs/2510.04000)  
 *Venue:* Under review at IEEE Transactions on Communications (preliminary version presented at IEEE ICC 2025)
 
 ## Overview
