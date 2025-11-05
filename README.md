@@ -51,7 +51,6 @@ This dataset combines MNIST handwritten digits with FSDD spoken digits.
 2. **FSDD** (Free Spoken Digit Dataset):
 ```bash
 git clone https://github.com/Jakobovski/free-spoken-digit-dataset.git
-# Place FSDD data in data/FSDD/
 ```
 
 The code will automatically align MNIST images with FSDD audio samples and apply augmentation.
@@ -111,28 +110,6 @@ python main.py --dataset handwritten --no_det True --sampling full
 python main.py --dataset handwritten --no_det False --sampling full
 ```
 
-### Configuration Options
-
-Key hyperparameters can be adjusted via command-line arguments:
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| `--dataset` | `mmfi` | Dataset: `handwritten` or `mmfi` |
-| `--no_det` | `True` | Use stochastic encoder (DIB-based) |
-| `--sampling` | `opt` | Selection policy: `opt`, `rand`, or `full` |
-| `--num_of_sel_Tx` | `4` | Max modalities per transmitter (E_k) |
-| `--num_of_sel_Rx` | `2` | Max transmitters per receiver (E_t) |
-| `--embd_dim` | `24` | Embedding dimension for compressed features |
-| `--beta` | `1e-3` | Rate-relevance tradeoff parameter (beta) |
-| `--lr_code` | `1e-4` | Learning rate for encoders/decoders |
-| `--lr_sel` | `0.5e-4` | Learning rate for selectors |
-| `--epochs` | `2000` | Number of training epochs |
-| `--bs` | `20` | Batch size |
-| `--sparse` | `False` | Enable sparse selection penalty |
-| `--gamma` | `1e-3` | Sparse selection coefficient (gamma) |
-| `--seed` | `114514` | Random seed |
-| `--log_freq` | `5` | Logging frequency (epochs) |
-
 ### Advanced Usage
 
 **Explore rate-relevance tradeoff** by varying beta:
@@ -145,8 +122,6 @@ done
 **Study learning rate ratio effects**:
 ```bash
 python main.py --dataset handwritten --lr_code 1e-4 --lr_sel 0.5e-4  # ratio 1:2 (default)
-python main.py --dataset handwritten --lr_code 1e-4 --lr_sel 1e-4    # ratio 1:1
-python main.py --dataset handwritten --lr_code 1e-4 --lr_sel 2e-4    # ratio 2:1
 ```
 
 **Enable sparse selection without hard constraints** (three-way tradeoff):
@@ -177,19 +152,6 @@ pom2dib/
 |- logs/                 # Training logs
 |- README.md
 ```
-
-## Logs and Outputs
-
-Training logs are saved in `logs/` with the following naming convention:
-```
-{dataset}_{method}_lr_sel_{lr_sel}_beta_{beta}_dim_{embd_dim}_sel_Tx_{E_k}_Rx_{E_t}_Spr_{sparse}_{timestamp}.log
-```
-
-Each log contains:
-- Training loss, relevance (H(Y|Z)), and rate (I(X;Z))
-- Log-likelihood of selection policy (for PoM2-DIB)
-- Test accuracy/MPJPE per task
-- Selected modalities at each iteration
 
 ## Citation
 
